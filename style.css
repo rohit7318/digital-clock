@@ -1,0 +1,140 @@
+*
+{
+    box-sizing: border-box;
+}
+body
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: url("https://images.unsplash.com/photo-1586348943529-beaae6c28db9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1915&q=80");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-weight: 900;
+    font-family: sans-serif;
+    overflow: hidden;
+    
+}
+
+.wrapper
+{
+    display: flex;
+    gap: 2vw;
+    /* background-color: orange; */
+}
+
+.clock
+{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    /* row-gap: 1vw; */
+
+    /* background-color: red; */
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border: none;
+    overflow: hidden;
+    
+}
+
+#hours ,#minutes,#seconds
+{
+    padding: 1vw 2vw;
+    min-width: 8vw;
+    min-height: 8vw;
+    font-size: 8vw;
+    color: rebeccapurple;
+    background-color: #FFBD8A;
+    /* color: #FF3224; */
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    overflow: hidden;
+    border: none;
+}
+.text 
+{
+    font-size: 1.5vw;
+    padding: 1vw 2vw;
+    /* height: 3vw; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    background-color: #F55441;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    /* background-color: transparent; */
+}
+
+#ampm 
+{
+    
+    font-size: 1.5vw;
+    align-self: end;
+    /* background-color: red; */
+    background-color: #F55441;
+    padding: 1vw 2vw;
+    border-radius: 8px;
+    
+}
+
+footer
+{
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 2vh;
+
+}
+
+
+@media (min-width:300px) and (max-width:800px) 
+{
+    body 
+    {
+        /* background-position: bottom ; */
+        /* align-items: ; */
+        justify-content: flex-start;
+        padding-top: 10vh;
+    }
+    .wrapper
+    {
+        /* border: 2px solid red; */
+        padding-left: 5vw;
+        padding-right: 5vw;
+        width: 100%;
+    }
+    .clock
+    {
+        /* height: fit-content; */
+    }
+
+    #hours ,#minutes,#seconds
+    {
+        padding: 3vw 6vw;
+        /* font-size: ; */
+        font-size: 10vw;
+        height: fit-content;
+
+    }
+
+    .text
+    {
+        font-size: 4.5vw;
+        padding: 2vw 4vw;
+    }
+
+    #ampm
+    {
+        font-size: 5.5vw;
+    }
+
+    
+}
